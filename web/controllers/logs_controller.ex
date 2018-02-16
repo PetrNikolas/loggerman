@@ -2,14 +2,6 @@ defmodule Loggerman.LogsController do
   use Loggerman.Web, :controller
   
   def index(conn, %{"text" => text} = params) do
-    # webhookURL = "https://hooks.slack.com/services/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"
-
-    #headers = [
-    #    {"Content-Type", "application/json; charset=utf-8"},
-    #    {"Accept", "application/json"},
-    #    {"Access-Control-Allow-Origin", "*"}
-    #]
-
     body = %{ 
         text: text,
         channel: "#YOUR-CHANNEL"
